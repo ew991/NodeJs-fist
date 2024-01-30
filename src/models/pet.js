@@ -22,6 +22,8 @@ module.exports = (sequelize, DataTypes) => {
         addressAcp: DataTypes.STRING,
         addressAcp: DataTypes.BOOLEAN,
         ownerID: DataTypes.INTEGER,
+        image: DataTypes.STRING,
+
     }, {
         sequelize,
         modelName: 'Pet',

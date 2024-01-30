@@ -4,9 +4,9 @@ let router = express.Router();
 
 let initWebRouters = (app) => {
     router.get('/', homeController.getHomePage);
-    router.get('/1', (req, res) => {
-        return res.send('hello world with toan 1')
-    });
+    router.get('/crud', homeController.getCRUD);
+    router.post('/post-crud', homeController.postCRUD);
+
 
 
     return app.use("/", router);
